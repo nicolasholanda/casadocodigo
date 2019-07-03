@@ -949,21 +949,25 @@
     <column id="238" parent="232" name="description">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="239" parent="232" name="numberOfPages">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="240" parent="232" name="price">
       <Position>4</Position>
       <DataType>decimal(19,2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="241" parent="232" name="title">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="242" parent="232" name="PRIMARY">
@@ -983,26 +987,21 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="245" parent="233" name="UK_7eh8vdpvmuq00lsf7ysuyqkji">
-      <ColNames>authors_id</ColNames>
-      <Unique>1</Unique>
-      <Type>btree</Type>
-    </index>
-    <index id="246" parent="233" name="FK_4qw8at30wfg1sg7r80oho6a42">
+    <index id="245" parent="233" name="FK_4qw8at30wfg1sg7r80oho6a42">
       <ColNames>Book_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="247" parent="233" name="UK_7eh8vdpvmuq00lsf7ysuyqkji">
+    <index id="246" parent="233" name="FK_7eh8vdpvmuq00lsf7ysuyqkji">
       <ColNames>authors_id</ColNames>
-      <UnderlyingIndexName>UK_7eh8vdpvmuq00lsf7ysuyqkji</UnderlyingIndexName>
-    </key>
-    <foreign-key id="248" parent="233" name="FK_4qw8at30wfg1sg7r80oho6a42">
+      <Type>btree</Type>
+    </index>
+    <foreign-key id="247" parent="233" name="FK_4qw8at30wfg1sg7r80oho6a42">
       <ColNames>Book_id</ColNames>
       <RefSchemaName>casadocodigo</RefSchemaName>
       <RefTableName>Book</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="249" parent="233" name="FK_7eh8vdpvmuq00lsf7ysuyqkji">
+    <foreign-key id="248" parent="233" name="FK_7eh8vdpvmuq00lsf7ysuyqkji">
       <ColNames>authors_id</ColNames>
       <RefSchemaName>casadocodigo</RefSchemaName>
       <RefTableName>Author</RefTableName>

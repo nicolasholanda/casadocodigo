@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Model
-public class AdminBooksListBean {
+public class AdminListBooksBean {
     @Inject
     private BookDAO bookDAO;
     private List<Book> books = new ArrayList<Book>();
@@ -18,6 +18,10 @@ public class AdminBooksListBean {
     @PostConstruct
     private void loadObjects() {
         this.books = bookDAO.list();
+    }
+
+    public List<Book> getBooks() {
+        return this.books;
     }
 
 }

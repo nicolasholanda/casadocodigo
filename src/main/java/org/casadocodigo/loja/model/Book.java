@@ -1,31 +1,59 @@
 package org.casadocodigo.loja.model;
 
+import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.NotBlank;
+
 import javax.persistence.*;
+import javax.validation.constraints.*;
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 @Entity
 public class Book {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
+    @NotNull
+    @NotBlank
     private String title;
+
+    @NotNull
+    @NotBlank
+    @Length(min = 10)
     private String description;
+
+    @NotNull
+    @Min(value = 50)
     private Integer numberOfPages;
+
+    @NotNull
+    @DecimalMin("20")
     private BigDecimal price;
-    @OneToMany
+
+    @ManyToMany
+    @NotNull
+    @Size(min = 1)
     private List<Author> authors = new ArrayList<>();
+
+    @Future
+    @NotNull
+    private Calendar releaseDate;
+
+    private String summaryPath;
 
     public void add(Author author) {
         authors.add(author);
     }
 
-    public Integer getId() {
-        return id;
+    public List<Author> getAuthors() {
+        return authors;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public Integer getId() {
+        return id;
     }
 
     public String getTitle() {
@@ -58,6 +86,22 @@ public class Book {
 
     public void setPrice(BigDecimal price) {
         this.price = price;
+    }
+
+    public Calendar getReleaseDate() {
+        return releaseDate;
+    }
+
+    public void setReleaseDate(Calendar releaseDate) {
+        this.releaseDate = releaseDate;
+    }
+
+    public String getSummaryPath() {
+        return summaryPath;
+    }
+
+    public void setSummaryPath(String summaryPath) {
+        this.summaryPath = summaryPath;
     }
 
     @Override
