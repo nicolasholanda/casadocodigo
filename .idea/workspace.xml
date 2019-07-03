@@ -7,34 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b8df24-126d-4e0c-a369-fd5c16af9554" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/casadocodigo/loja/converter/CalendarHtml5Converter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/casadocodigo/loja/converter/EntityConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/casadocodigo/loja/infra/FacesContextProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/casadocodigo/loja/infra/FileSaver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/casadocodigo/loja/infra/MessagesHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ValidationMesssages.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jsf_messages.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/livros/form.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/87a4d45d-36ca-4283-a8b8-604fe60a5443.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/87a4d45d-36ca-4283-a8b8-604fe60a5443.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/casadocodigo/loja/managedbeans/AdminBooksBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/casadocodigo/loja/managedbeans/AdminBooksBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/casadocodigo/loja/managedbeans/AdminBooksListBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/casadocodigo/loja/managedbeans/AdminListBooksBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/casadocodigo/loja/model/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/casadocodigo/loja/model/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/casadocodigo/loja/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/casadocodigo/loja/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/livros/form.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/livros/list.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/livros/list.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/casadocodigo/WEB-INF/classes/org/casadocodigo/loja/dao/BookDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/casadocodigo/WEB-INF/classes/org/casadocodigo/loja/dao/BookDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/casadocodigo/WEB-INF/classes/org/casadocodigo/loja/managedbeans/AdminBooksBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/casadocodigo/WEB-INF/classes/org/casadocodigo/loja/managedbeans/AdminBooksBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/casadocodigo/WEB-INF/classes/org/casadocodigo/loja/model/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/casadocodigo/WEB-INF/classes/org/casadocodigo/loja/model/Author.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/casadocodigo/WEB-INF/classes/org/casadocodigo/loja/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/casadocodigo/WEB-INF/classes/org/casadocodigo/loja/model/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/casadocodigo/WEB-INF/faces-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/casadocodigo/WEB-INF/faces-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/casadocodigo/produtos/form.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/casadocodigo/loja/dao/BookDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/casadocodigo/loja/dao/BookDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/casadocodigo/loja/managedbeans/AdminBooksBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/casadocodigo/loja/managedbeans/AdminBooksBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/casadocodigo/loja/model/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/casadocodigo/loja/model/Author.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/casadocodigo/loja/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/casadocodigo/loja/model/Book.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,8 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/livros/list.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+            <state relative-caret-position="259">
+              <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -300,7 +273,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562183419269" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562187044074" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs.protractor.protractor_package" value="" />
@@ -506,18 +479,17 @@
       <option name="presentableId" value="Default" />
       <updated>1561742406463</updated>
       <workItem from="1561742408373" duration="22830000" />
-      <workItem from="1562000500953" duration="24324000" />
+      <workItem from="1562000500953" duration="24916000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47154000" />
+    <option name="totallyTimeSpent" value="47746000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49871466" visible="true" weight="0.22186752" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49871466" visible="true" weight="0.22186752" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -535,7 +507,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32890365" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.32833335" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
@@ -795,8 +767,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/livros/list.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        <state relative-caret-position="259">
+          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
         </state>
       </provider>
     </entry>
