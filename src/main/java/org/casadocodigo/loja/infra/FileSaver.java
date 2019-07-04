@@ -1,28 +1,31 @@
 package org.casadocodigo.loja.infra;
 
+import com.amazonaws.ClientConfiguration;
+import com.amazonaws.auth.AWSCredentials;
+import com.amazonaws.auth.BasicAWSCredentials;
+import com.amazonaws.services.s3.AmazonS3Client;
+import com.amazonaws.services.s3.S3ClientOptions;
+import com.amazonaws.services.s3.model.ObjectMetadata;
+
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.Part;
 
 @RequestScoped
 public class FileSaver {
-
     @Inject
-    private HttpServletRequest request;
+    private AmazonS3Client s3;
     private static final String CONTENT_DISPOSITION = "content-disposition";
     private static final String FILENAME_KEY = "filename=";
 
-    public String write(String baseFolder, Part multipartFile) {
-        String serverPath = request.getServletContext().getRealPath(String.format("/%s", baseFolder));
+    public String write(Part multipartFile) {
         String fileName = extractFileName(multipartFile.getHeader(CONTENT_DISPOSITION));
-        String path = String.format("%s/%s", serverPath, fileName);
         try {
-            multipartFile.write(path);
+            s3.putObject("casadocodigo", fileName, multipartFile.getInputStream(), new ObjectMetadata());
+            return "https://s3.amazonaws.com/casadocodigo/" + fileName + "?noAuth=true";
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        return String.format("%s/%s", baseFolder, fileName);
     }
 
     private String extractFileName(String contentDisposition) {

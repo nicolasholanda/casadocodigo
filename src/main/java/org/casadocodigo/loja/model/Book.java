@@ -104,6 +104,10 @@ public class Book {
         this.summaryPath = summaryPath;
     }
 
+    public void setAuthors(List<Author> authors) {
+        this.authors = authors;
+    }
+
     @Override
     public String toString() {
         return "Book{" +

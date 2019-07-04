@@ -1,4 +1,4 @@
-package org.casadocodigo.loja.managedbeans;
+package org.casadocodigo.loja.managedbeans.admin;
 
 import org.casadocodigo.loja.dao.BookDAO;
 import org.casadocodigo.loja.model.Book;
